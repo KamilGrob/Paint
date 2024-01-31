@@ -1,0 +1,35 @@
+﻿<Window x:Class="Paint.ColorEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Paint"
+        mc:Ignorable="d"
+        Title="ColorEditWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Red:"/>
+            <TextBox x:Name="RedTextBox" Width="50" Margin="0,0,10,0"/>
+
+
+            <TextBlock Text="Green:"/>
+            <TextBox x:Name="GreenTextBox" Width="50" Margin="0,0,10,0"/>
+
+            <TextBlock Text="Blue:"/>
+            <TextBox x:Name="BlueTextBox" Width="50" Margin="0,0,10,0"/>
+
+            <Button Content="Zastosuj" Click="ApplyButton_Click" Width="80" Height="30" Margin="0,10,0,0"/>
+
+            <Button Content="HSV" Click="ApplyButton_Convert" Width="80" Height="30" Margin="0,10,0,0"/>
+
+            <TextBlock Text="Hue:"/>
+            <TextBox x:Name="HueTextBox" IsReadOnly="True" Width="50" Margin="0,0,10,0"/>
+
+            <TextBlock Text="Saturation:"/>
+            <TextBox x:Name="SaturationTextBox" IsReadOnly="True" Width="50" Margin="0,0,10,0"/>
+
+            <TextBlock Text="Value:"/>
+            <TextBox x:Name="ValueTextBox" IsReadOnly="True" Width="50" Margin="0,0,10,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
